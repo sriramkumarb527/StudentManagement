@@ -44,7 +44,7 @@ namespace StudentManagement.Controllers
             bool isTokenCache = false;
             var cached = Cache.Get();
             var result = cached.GetCacheItem("CacheToken");
-            if(result != null)
+            if (result != null)
             {
                 return result.Value.ToString();
             }
